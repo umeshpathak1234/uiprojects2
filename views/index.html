@@ -1,0 +1,48 @@
+<!doctype>
+<html>
+    <head>
+    <title> first angular app</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    </head>
+    <body ng-app="appName">
+        
+        Testing angular application    
+     <div ng-controller="appCtrl">
+            
+         <h1>One way data binding</h1>
+                <h2>{{title}}</h2>
+            
+        <h1>Two way data binding</h1>
+             <h1>{{::title}}</h1>
+            
+            <button class="btn btn-primary" ng-click="change()">change</button>
+            <br>
+         
+            <h1>Form elements</h1>
+            <input type="text" ng-model="formModel"> 
+                    {{formModel}}
+            <br>
+            <button class="btn btn-success" ng-click="displayPerson()">appCtrl</button>
+    </div>
+       
+    <div>
+            <h3>Test for personService in person controller</h3>  
+    </div>
+        
+    <div ng-controller="personCtrl">
+              <button class="btn btn-success" ng-click="displayPerson()">personCtrl</button>
+    </div>
+        
+    </body>
+    
+    
+    <script type="text/javascript" src="/node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+     
+    <script type="text/javascript" src="/scripts/controllers/appCtrl.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/personCtrl.js"></script>
+    <script type="text/javascript" src="/scripts/services/personService.js"></script>
+    <script type="text/javascript" src="/scripts/services/personFactory.js"></script>
+   
+   
+</html>
