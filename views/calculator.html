@@ -1,0 +1,29 @@
+<!doctype Html>
+<html>
+    <head><title>Calculator</title>
+    <script src="/node_modules/angular/angular.min.js">
+        </script>
+    <link rel=stylesheet href="/node_modules/bootstrap/dist/css/bootstrap.css">
+  
+    </head>
+<body ng-app="myapp">
+    
+        <div ng-controller="calculator">
+        
+   First Number <input type="number" ng-model="a"><br>
+   Second Number<input type="number" ng-model="b"><br>
+            <button ng-click="add()" class="btn btn-danger" ng-model ="add">Add</button>
+            <button ng-click="sub()" class="btn btn-danger">Sub</button>
+            <button ng-click="mul()" class="btn btn-danger">Mul</button>
+            <button ng-click="div()" class="btn btn-danger">Div</button>
+            <p>{{result}}</p>
+        </div>
+    
+    
+    
+    
+    
+   
+    </body>
+       <script type="text/javascript" src="/scripts/calculator.js"></script>
+</html>
